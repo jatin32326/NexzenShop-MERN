@@ -1,0 +1,209 @@
+{/* submenu Index  */}
+            {submenuIndex === 0 && <ul className='submenu absolute top-[100%] left-[0%] w-full pl-3 '>
+              <li className='list-none relative'>
+                <Link to="/" className='w-full'>
+                  <Button className='w-full !justify-start !text-left !px-3 !text-[rgba(0,0,0,0.8)]'>
+                    Apparel
+                  </Button>
+                </Link>
+                {innersubmenuIndex === 0 ? (
+                  <FiMinusSquare className='absolute top-[10px] right-[13px] cursor-pointer' onClick={() => openInnerSubmenu(0)} />
+                ) : (
+                  <FaRegSquarePlus className='absolute top-[10px] right-[13px] cursor-pointer' onClick={() => openInnerSubmenu(0)} />
+                )
+                }
+{/* Inner_submenu  */}
+                {innersubmenuIndex === 0 && <ul className='submenu-inner absolute top-[100%] left-[0%] w-full pl-3 '>
+                  <li className='list-none relative mb-1'>
+                    <Link to="/" className='link w-full !justify-start !text-left !px-3 transition text-[13px]'>
+                      Men
+                    </Link>
+                  </li>
+                  <li className='list-none relative  mb-1'>
+                    <Link to="/" className='link w-full !justify-start !text-left !px-3 transition text-[13px]'>
+                      Women
+                    </Link>
+                  </li>
+                </ul>}
+                  </li>
+            </ul>
+            }
+
+
+
+             {/* Cart drawer */}
+      <Drawer open={openCartPanel} onClose={toggleDrawer(false)} 
+       anchor={"right"} className="cartPanel">
+        <div className="flex items-center justify-between py-3 px-4 gap-3 border border-[rgba(0,0,0,0.2)]">
+          <h4 className="font-bold">Shopping Cart (1)</h4>
+          <IoCloseSharp className="text-[28px] cursor-pointer"onClick={toggleDrawer(false)}/>
+        </div>
+
+        <div className="scroll w-full max-h-[300px] overflow-y-scroll overflow-x-hidden py-3 px-4">
+          <div className="cartItem w-full flex items-center gap-4 border-b border-[rgba(0,0,0,0.1)] pb-3">
+
+            <div className="img w-[25%] overflow-hidden h-[90px] rounded-md">
+              <img src="https://rukminim1.flixcart.com/image/1364/1364/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=90" className="w-full"/>
+            </div>
+
+            <div className="information w-[75%] pr-5 relative">
+            
+              <h4 className="text-[14px] font-[500]">
+              METRONAUT Men<br/>Regular Fit Solid
+               Spread Collar Casual Shirt
+              </h4>
+              
+              <p className="flex items-center gap-5 mt-2 mb-2">
+                <span className="font-medium">Qty : <span>2</span></span>
+                <span className="font-bold text-pink-800">Price : $50</span>
+              </p>
+               
+               <MdOutlineDeleteOutline className="absolute top-[5px] right-[5px] cursor-pointer text-[20px] link"/>
+            </div>
+          </div>
+          <div className="cartItem w-full flex items-center gap-4 border-b border-[rgba(0,0,0,0.1)] pb-3 pt-2">
+
+            <div className="img w-[25%] overflow-hidden h-[90px] rounded-md">
+              <img src="https://rukminim1.flixcart.com/image/1364/1364/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=90" className="w-full"/>
+            </div>
+
+            <div className="information w-[75%] pr-5 relative">
+            
+              <h4 className="text-[14px] font-[500]">
+              METRONAUT Men<br/>Regular Fit Solid
+               Spread Collar Casual Shirt
+              </h4>
+              
+              <p className="flex items-center gap-5 mt-2 mb-2">
+                <span className="font-medium">Qty : <span>2</span></span>
+                <span className="font-bold text-pink-800">Price : $50</span>
+              </p>
+               
+               <MdOutlineDeleteOutline className="absolute top-[5px] right-[5px] cursor-pointer text-[20px] link"/>
+            </div>
+          </div>
+          <div className="cartItem w-full flex items-center gap-4 border-b border-[rgba(0,0,0,0.1)] pb-3 pt-2">
+
+            <div className="img w-[25%] overflow-hidden h-[90px] rounded-md">
+              <img src="https://rukminim1.flixcart.com/image/1364/1364/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=90" className="w-full"/>
+            </div>
+
+            <div className="information w-[75%] pr-5 relative">
+            
+              <h4 className="text-[14px] font-[500]">
+              METRONAUT Men<br/>Regular Fit Solid
+               Spread Collar Casual Shirt
+              </h4>
+              
+              <p className="flex items-center gap-5 mt-2 mb-2">
+                <span className="font-medium">Qty : <span>2</span></span>
+                <span className="font-bold text-pink-800">Price : $50</span>
+              </p>
+               
+               <MdOutlineDeleteOutline className="absolute top-[5px] right-[5px] cursor-pointer text-[20px] link"/>
+            </div>
+          </div>
+          <div className="cartItem w-full flex items-center gap-4 border-b border-[rgba(0,0,0,0.1)] pb-3 pt-2">
+
+            <div className="img w-[25%] overflow-hidden h-[90px] rounded-md">
+              <img src="https://rukminim1.flixcart.com/image/1364/1364/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=90" className="w-full"/>
+            </div>
+
+            <div className="information w-[75%] pr-5 relative">
+            
+              <h4 className="text-[14px] font-[500]">
+              METRONAUT Men<br/>Regular Fit Solid
+               Spread Collar Casual Shirt
+              </h4>
+              
+              <p className="flex items-center gap-5 mt-2 mb-2">
+                <span className="font-medium">Qty : <span>2</span></span>
+                <span className="font-bold text-pink-800">Price : $50</span>
+              </p>
+               
+               <MdOutlineDeleteOutline className="absolute top-[5px] right-[5px] cursor-pointer text-[20px] link"/>
+            </div>
+          </div>
+          <div className="cartItem w-full flex items-center gap-4 border-b border-[rgba(0,0,0,0.1)] pb-3 pt-2">
+
+            <div className="img w-[25%] overflow-hidden h-[90px] rounded-md">
+              <img src="https://rukminim1.flixcart.com/image/1364/1364/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=90" className="w-full"/>
+            </div>
+
+            <div className="information w-[75%] pr-5 relative">
+            
+              <h4 className="text-[14px] font-[500]">
+              METRONAUT Men<br/>Regular Fit Solid
+               Spread Collar Casual Shirt
+              </h4>
+              
+              <p className="flex items-center gap-5 mt-2 mb-2">
+                <span className="font-medium">Qty : <span>2</span></span>
+                <span className="font-bold text-pink-800">Price : $50</span>
+              </p>
+               
+               <MdOutlineDeleteOutline className="absolute top-[5px] right-[5px] cursor-pointer text-[20px] link"/>
+            </div>
+          </div>
+          <div className="cartItem w-full flex items-center gap-4 border-b border-[rgba(0,0,0,0.1)] pb-3 pt-2">
+
+            <div className="img w-[25%] overflow-hidden h-[90px] rounded-md">
+              <img src="https://rukminim1.flixcart.com/image/1364/1364/xif0q/shirt/l/z/1/11-12-years-multicolur-klok-wear-original-imahhn5ag9vkh52d.jpeg?q=90" className="w-full"/>
+            </div>
+
+            <div className="information w-[75%] pr-5 relative">
+            
+              <h4 className="text-[14px] font-[500]">
+              METRONAUT Men<br/>Regular Fit Solid
+               Spread Collar Casual Shirt
+              </h4>
+              
+              <p className="flex items-center gap-5 mt-2 mb-2">
+                <span className="font-medium">Qty : <span>2</span></span>
+                <span className="font-bold text-pink-800">Price : $50</span>
+              </p>
+               
+               <MdOutlineDeleteOutline className="absolute top-[5px] right-[5px] cursor-pointer text-[20px] link"/>
+            </div>
+          </div>
+        </div>
+
+        <br/>
+
+        <div className="bottomInfo w-full py-3 px-4 flex items-center justify-between border-t border-[rgba(0,0,0,0.2)] flex-col">
+          <div className="flex items-center justify-between w-full">
+            <span className="text-[14px] font-[600]">1 item</span>
+            <span className="text-pink-900 font-bold">$86.00</span>
+          </div>
+
+          <div className="flex items-center justify-between w-full">
+            <span className="text-[14px] font-[600]">Shipping</span>
+            <span className="text-pink-900 font-bold">$8.00</span>
+          </div>
+
+        </div>
+
+        <div className="bottomInfo-2 w-full py-3 px-4 flex items-center justify-between border-t border-[rgba(0,0,0,0.2)] flex-col">
+
+          <div className="flex items-center justify-between w-full">
+            <span className="text-[14px] font-[600]">Total (tax incl.)</span>
+            <span className="text-pink-900 font-bold">$93.00</span>
+          </div>
+          <div className="flex items-center justify-between w-full">
+            <span className="text-[14px] font-[600]">Taxes:</span>
+            <span className="text-pink-900 font-bold">$0.00</span>
+          </div>
+
+        </div>
+
+        <br/>
+
+        <div className="flex items-center justify-between w-full gap-3">
+          <Button className="btn-org btn-lg w-[50%] !mb-5 !ml-3">View Cart</Button>
+          <Button className="btn-org btn-lg w-[50%] !mb-5 !mr-3">Checkout</Button>
+
+        </div>
+        
+      </Drawer>
+
+   
