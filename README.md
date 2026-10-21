@@ -4,10 +4,6 @@ A full-stack MERN eCommerce application built for modern online shopping experie
 
 This project is currently in active development. The core backend and major frontend flows are already in place, while final UI refinements, full order flow completion, and payment integration are still being developed.
 
-## Live Project
-
-- GitHub: https://github.com/jatin32326/NexzenShop-MERN
-
 ## Overview
 
 NexzenShop is designed as a scalable eCommerce platform with:
@@ -420,7 +416,7 @@ This project does not currently include a specific license. If you want, you can
 ## Author
 
 - Project: NexzenShop-MERN
-- Developer: Jatin
+- Developer: Jatin Kumar
 - GitHub: https://github.com/jatin32326
 
 ---
@@ -429,9 +425,4 @@ This project does not currently include a specific license. If you want, you can
 
 NexzenShop-MERN is a strong MERN stack eCommerce project in progress. It already has a solid foundation for real online shopping features, and it is well-structured for future upgrades into a production-ready marketplace or ecommerce platform.
 
-If you want, I can also generate:
 
-- a premium GitHub README with badges and screenshots section
-- a Hindi version of this README
-- a deployment-ready README for Vercel + Render + MongoDB
-- a short version for project showcase on LinkedIn/GitHub profile
